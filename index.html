@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./javascript/site.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="entete">
+        <div class="image"><img src="./images/android-chrome-512x512.png" alt="" width="50px" height="50px"class="src"></div>
+        <div class="lien">
+            <div class="acceuil"><a href="./index.html">Acceuil</a></div>
+            <div class="visualisation"><a href="./php/visualisation.php" >Visualisation de module</a></div>
+        </div>
+    </div>
+
+    <div id="container">
+         <h2><i>Enregistrer un nouveau Module</i></h2>
+        <form action="./php/site.php" method="post">
+            <div>
+                <label for="name">Nom du module</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div>
+                <label for="type">Type de module</label>
+                <input type="text" id="type" name="type">
+            </div>
+            <div>
+                <label for="etat">Etat du module </label>
+                <select id="etat" name="etat" style="height:25px; width: 176px; border-radius: 3px 3px 3px 3px;">
+                    <option value="active">Actif</option>
+                    <option value="inactive">Inactif</option>
+                </select>
+            </div>
+            <div>
+                <label for="valeur">Valeur mesuree </label>
+                <input type="number" id="valeur" name="valeur">
+            </div>
+            <div>
+                <label for="duree">Duree de fonctionnement </label>
+                <input type="time" id="duree" name="duree">
+            </div>
+            <div>
+                <label for="donnee">Donnee Envoyes </label>
+                <input type="number" id="donnee" name="donnee">
+            </div>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+
+   </div>
+
+   <div class="footer"> Copyright 2.10 Modules</div>
+
+   
+</body>
+</html>
+
